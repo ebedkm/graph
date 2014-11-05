@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head> 
+  <body>
+    <canvas id="myCanvas" width="1000" height="600"></canvas>
+    <script type="text/javascript" src='graph.js'></script>
+    <script type="text/javascript">
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      var Graph = new Graph(context);
+      var a = {};
+      a.x = 50;
+      a.y = 90;
+
+      var b = {};
+      b.x = 200;
+      b.y = 300;
+      Graph.drawEdge(a, b, 3, '#00f');
+    </script>
+  </body>
+</html> 
